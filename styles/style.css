@@ -1,9 +1,13 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
+/* VARIABLES */
 :root {
-    
+    --green: #00B172;
+    --light-black: #1A1A1A;
 }
+
+/* GENERALES */
 * {
     font-family: Roboto;
 }
@@ -11,11 +15,65 @@ html, body {
     padding: 0;
     margin: 0;
 }
-/*
-Colors:
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+/* HEADER */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 45px;
+}
+nav img{
+    height: 70px;
+}
+.link-nav {
+    color: var(--light-black);
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+.header-content {
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.header-content h1 {
+    font-size: 5em;
+    margin: 10px 0;
+}
+.header-subheader {
+    font-weight: normal;
+    font-size: 2em;
+    margin: 5px 0;
+}
 
-*/
+/* MIDDLE */
+.middle-section {
+    text-align: center;
+}
+.middle-section > div:first-of-type{
+    display: flex;
+    justify-content: center;
+}
+.middle-section-h1 {
+    font-size: 2em;
+    border-bottom: 2px solid var(--green);
+    width: 400px;
+    padding: 10px 0;
+}
+.features {
+    display: flex;
+    box-sizing: border-box;
+}
+.features div {
+    width: 33%;
+}
+.features div img {
+    max-width: 25%;
+}
